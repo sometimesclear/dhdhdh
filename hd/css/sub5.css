@@ -1,0 +1,19 @@
+@import url(common.css);
+
+/* sub5-1 */
+.agree { padding: 33px 20px;  border-bottom: 1px solid #b5b6b8; border-top: 1px solid #b5b6b8; background:#f8f8f8; margin-bottom: 11px; }
+.agree h4 {font-size: 14px; margin-bottom: 18px; margin-top: 48px;}
+.agree h4:first-child{margin-top: 0;}
+.agree input { margin-top: 10px; }
+.text {overflow: auto; padding: 14px 11px; width: 615px; height: 111px; border: 1px solid #e1e1e1; background: white; }
+.text h5 { font-size: 12px; line-height:24px; margin-top: 33px;}
+.text h5:first-child {margin-top: 0;}
+.text p {font-size: 12px;  line-height: 24px;}
+.all { font-size:12px; font-weight: bold; }
+.info { padding: 26px 20px 29px 20px;  border-bottom: 1px solid #b5b6b8; border-top: 1px solid #b5b6b8; background:#f8f8f8; margin-bottom: 35px; margin-top: 51px; }
+.info dl { height: 186px; /*border: 1px solid orange;*/ }
+.info dt { float: left;  width:173px; /*background: lightgreen;*/ font-size: 14px; font-weight: bold;}
+.info dd { margin-left: 173px; margin-bottom: 15px;  }
+.info dd input {height: 23px; width: 226px;  border: 1px solid #e1e1e1;}
+.ok {/* border: 1px solid blue;*/ text-align: center; }
+.ok input { height: 27px; width: 62px; background:#00b65d; border: 0; color: white; font-size: 14px; font-weight: bold;}

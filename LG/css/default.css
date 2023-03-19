@@ -1,0 +1,70 @@
+/* reset */
+html,body { width:100%; height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input,legend { margin:0; padding:0; }
+body,h1,h2,h3,h4,input,button { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+
+/* base */
+body { font-family: 'Noto Sans CJK KR'; font-size: 14px;}
+a { text-decoration: none;}
+.blind { position: absolute; top: -99999px; left: 0px;}
+.skip_nav a{ position: absolute; top: -99999px; left: 0px; }
+.skip_nav a:focus { position: absolute; top: 0px; left: 0px; background: red; color: white; font-size: 16px;}
+
+/* layout */
+.inner { margin: 0 auto; width: 1200px; /*border: 1px dashed orange;*/}
+header .inner { position: relative; height: 100px; }
+header { background: url(../images/header_bg.gif) rgba(0,0,0,.8); }
+.visual {width:1920px ; height: 765px; /*background: url(../images/visual.jpg) no-repeat center top;*/ } /* 이미지 가운데로 오게하는거 어케했지? 백그라운드로 노리핏 센터 탑*/
+#contents { margin: 0 auto; height: 1025px; width: 1200px; /*border: 1px dashed green;*/ padding-top: 66px; }
+footer { height: 216px; background: lightgray;}
+footer .inner { height: 216px;}
+ 
+
+/* header */
+h1 {position: absolute; left: 27px; top: 45px; width: 99px; height: 28px; background: lightblue; }
+.gnb { padding-left: 242px; padding-top: 45px; }
+.gnb li { float: left; margin-right: 80px;}
+.gnb li a { color:#151515; font-size: 21px; transition: .5s; }
+.gnb li a:hover { color: white; padding:0px 8px; background: #c10c3f;}
+.search { position: absolute; right: 27px; top: 50px;}
+.search #s1 { width: 120px; height: 20px; }
+.search input { float: left; }
+input[type=image] {padding-left: 3px;}
+
+/* visual */
+.inner { border: 2px solid green; }
+.more img{position: absolute; left: 440px; top: 408px; }
+.more img {width:148px; height: 40px;}
+.bar {position: absolute; left: 885px; top: 612px;}
+.bar img { padding-right: 5px;}
+
+
+/* contents */
+#contents { position: relative;}
+.con1 li { float: left; padding-left: 26px; padding-bottom:  56px;}
+.con1 li:first-child { padding: 1px;}
+.con2 li {float: left; padding-right: 20px;}
+.con2 li.notice { position: absolute; left: 305px; top: 693px;}
+.con2 li.fin { float: right; padding: 0px;} 
+.con2 li:hover img { opacity: .7; /*transform: scale(1.2,1.2);*/}
+/*.con2 img:hover { transform: scale(1.4);} 안쪽 이미지만 변형 어케 했지*/
+
+.top { position: fixed; right: 40px; bottom: 60px;}
+
+
+
+/* footer */
+footer { background: url(../images/footer_bg.gif); }
+footer .inner {position: relative; }
+.submenu li { float: left; /*margin-right: 20px;*/ margin-top: 78px; padding-right: 20px;  padding-left: 20px; background: url(../images/bar.gif) no-repeat right center; }
+.submenu li:first-child {padding-left: 0; }
+.submenu li:last-child {padding-right: 0; background: none;}
+
+.submenu li a{ font-weight: bold; font-size: 14px; color: #777; }
+.etc {position: absolute; top: 124px; left: 0px; /*border: 1px solid blue;*/ color: #4a4a4a; line-height: 20px; font-weight: bold; color: #777;}
+.sns {position: absolute; right: 0px; top: 67px;}
+.sns li { float: left; margin-left: 7px; }

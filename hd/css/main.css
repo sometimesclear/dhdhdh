@@ -1,0 +1,26 @@
+
+@import url(common.css);
+
+/*visual*/
+.visual_typo { padding-top: 172px; padding-left: 27px; }
+
+
+
+
+/*contents*/
+#contents div { background: white; }
+#contents div img:hover { opacity: 0.7; }
+#contents div h2 { padding: 30px 0 17px 27px;  }
+#contents div p { padding: 0 27px;  }
+#contents div ul { padding: 0 27px; }
+#contents div li { padding-left: 10px; /*border: 1px solid orange;*/ background: url(../images/dot.gif) no-repeat 0 8px;}
+#contents .date { float: right;}
+
+.section1 { float: left; margin-right: 12px; width: 318px; height: 365px; background-color: darkblue; }
+.section2 { float: left; margin-right: 12px; margin-bottom: 15px; width: 318px; height: 365px; background-color: darkcyan; }
+.section3 { float: left; width: 318px; height: 365px; background-color: darkmagenta; }
+
+.section4 { float: left; margin-right: 12px; width: 486px; height: 398px; background-color: darkgreen; }
+.section5 { float: left; width: 480px; height: 398px; background-color: darkgoldenrod; }
+
+

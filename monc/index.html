@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>MONTBLANC</title>
+
+<style>
+/* reset */
+html,body { width:100%; height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,legend,button,input { margin:0; padding:0; }
+body,h1,h2,h3,h4,input,button { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+
+body {background-image: url(images/bg.jpg); background-size: cover; background-repeat: no-repeat; overflow: hidden;}
+.blind { position: absolute; left: 0px; top:-99999px;}
+.inner { margin: 0 auto; position: relative;  }
+
+#sidebar{ position: absolute; top: 0px; left: -310px; width: 301px; height: 1000px; background: rgba(35,35,45,.4); }
+#sidebar h1 { position: absolute; left: 102px; top: 78px;}
+
+.gnb { position: absolute; left: 45px; top: 257px;}
+.gnb li { padding-bottom: 33px;}
+
+.sns {/*border: 2px solid red;*/ position: absolute; left: 45px; bottom: 320px;}
+.sns ul li { float: left; padding-right: 28px;}
+
+#sidebar .address { position: absolute; left: 45px; bottom: 200px; }
+.copy { position: absolute; left: 45px; bottom: 160px; color: white; opacity: 0.6}
+</style>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+$(function(){
+
+    $("#sidebar").animate({ left:0},1000);
+
+});
+
+</script>
+</head>
+<body>
+
+
+<div class="inner">
+	
+	<div id="sidebar">
+		
+		<h1><img src="images/logo.png" alt="monctblanc"></h1>
+		<h2 class="blind">주요메뉴</h2>
+		<ul class="gnb">
+			<li><a href="#"><img src="images/gnb1.png" alt="about"></a></li>
+			<li><a href="#"><img src="images/gnb2.png" alt="collections"></a></li>
+			<li><a href="#"><img src="images/gnb3.png" alt="shop"></a></li>
+			<li><a href="#"><img src="images/gnb4.png" alt="event"></a></li>
+			<li><a href="#"><img src="images/gnb5.png" alt="contact"></a></li>
+		</ul>
+		<div class="sns">
+		<h2 class="blind">소셜미디어</h2>
+			<ul>
+				<li><a href="#"><img src="images/sns.png" alt="facebook"></a></li>
+				<li><a href="#"><img src="images/sns1.png" alt="twitter"></a></li>
+				<li><a href="#"><img src="images/sns2.png" alt="instagram"></a></li>
+			</ul>
+		</div>
+		<h2 class="blind">연락처 및 주소</h2>
+		<p class="address"><img src="images/adress.png" alt="Montblanc Seoul Lotte Avenuel 2F Lotte 	Avenuel	Namdaemun-ro 2ga, 130 Jung-gu, Seoul Tel: 82 2 2118 6053"></p>
+		<h2 class="blind">저작권</h2>
+		<p class="copy">&copy; 2020 MONTBLANC.</p>
+	</div>
+	
+	
+	
+	
+</div>
+
+
+
+</body>
+</html>

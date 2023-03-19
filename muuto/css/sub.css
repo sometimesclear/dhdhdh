@@ -1,0 +1,49 @@
+
+@import url(common.css);
+
+
+/* sub 공통 */
+header { width: 100%; height: 160px; background:url(../images/sub_header_bg.gif);  }
+footer { width: 100%; height: 160px; background:#aca3dd; }
+
+
+/* sub1 */
+#contents_sub { margin: 0 auto; width: 1280px; height: 2900px; /*border: 2px dashed blue;*/}
+#contents_sub p.pp { text-align: right; padding-top: 112px; padding-bottom: 76px; }
+
+#contents_sub .product li { float:left; margin-right: 46px;}
+#contents_sub .product li:last-child { margin: 0;}
+#contents_sub .p_name li { float: left;margin-right: 46px; /* border: 1px solid red; box-sizing: border-box;*/ padding-top: 42px; padding-bottom: 220px;}
+#contents_sub .p_name p { width:394px; text-align: center; }
+#contents_sub .p_name li:last-child { margin: 0;}
+
+.top {transition: .5s; position: fixed; top: 720px; right:100px; text-align: center; width: 50px; height: 50px; background-color: #aca3dd; border-radius: 50%; box-shadow:2px 3px 4px rgba(0,0,0,0.4);  }
+.top a { line-height: 50px; font-size: 14px; color: white; font-weight: lighter; }
+
+
+
+/* sub1-1 */
+#contents_sub1_1 { position: relative; margin: 0 auto; width: 1280px; height:960px; /*border: 1px dashed blue;*/}
+#contents_sub1_1 .v_chair {position: relative; /*border: 2px solid red;*/}
+#contents_sub1_1 .search { padding-left: 480px; /*border: 1px solid green;*/}
+#contents_sub1_1 .color { position: absolute; left: 600px; top: 200px;}
+#contents_sub1_1 .color li { padding-bottom:13px; }
+#contents_sub1_1 .marker { position: absolute; left: 0px; top: 443px;}
+#contents_sub1_1 .marker img {margin-right:464px; }
+#contents_sub1_1 .info { position: absolute; top: 60px; right: 24px; /*border: 2px dashed green; */}
+#contents_sub1_1 .info h2 { font-size: 38px; padding-bottom: 64px; }
+#contents_sub1_1 .info h3 { font-size: 34px; padding-bottom: 33px;}
+#contents_sub1_1 .info h4 { font-size: 18px; padding-bottom: 2px; }
+#contents_sub1_1 .info p { font-size: 18px; padding-bottom: 96px;}
+#contents_sub1_1 .info .p_last { font-size: 18px; font-family:Dinreg; }
+
+#contents_sub1_1 .info dl { line-height: 23px; text-transform: lowercase;}
+#contents_sub1_1 .info dt { float: left; font-weight: bold; /* border: 1px solid red;*/}
+#contents_sub1_1 .info dd {padding-bottom: 2px; margin-left:70px; font-family:Dinreg;}
+#contents_sub1_1 .info .cartbuy li { float: left;}
+
+
+/* 갤러리 */
+/*#contents_sub1_1 .gall { border: 1px solid hotpink;}*/
+#contents_sub1_1 .gall .v_chair { overflow: hidden; }
+/*#contents_sub1_1 .gall .v_chair .pic { border: 1px solid blue;}*/

@@ -1,0 +1,26 @@
+/* main */
+@import url(common.css);
+
+/* visual */
+.visual .inner .gall { position: absolute; left: -360px; top: 0px; width: 1920px; height: 765px; }
+.more img{position: absolute; left: 440px; top: 408px; }
+.more img {width:148px; height: 40px;}
+.bar {position: absolute; left: 885px; top: 612px;}
+.bar img { padding-right: 5px;}
+
+
+/* contents */
+#contents { position: relative;}
+.con1 li { float: left; padding-left: 26px; padding-bottom:  56px;}
+.con1 li:first-child { padding: 1px;}
+.con2 li {float: left; padding-right: 20px;}
+.con2 li.notice { position: absolute; left: 305px; top: 693px;}
+.con2 li.fin { float: right; padding: 0px;} 
+.con2 li:hover img { opacity: .7; /*transform: scale(1.2,1.2);*/}
+/*.con2 img:hover { transform: scale(1.4);} 안쪽 이미지만 변형 어케 했지*/
+
+
+
+
+
+

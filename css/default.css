@@ -1,0 +1,160 @@
+/* reset */
+html,body { width:100%; height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,legend,button,input { margin:0; padding:0; }
+body,h1,h2,h3,h4,input,button { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+
+
+/*base*/
+body { font-family:"Noto Sans Mono CJK KR", "Roboto Condensed", "Noto Sans CJK KR", Helvetica; font-size: 14px; color: #1b262c; font-weight: bold; overflow-x: hidden; min-width:1100px;}
+a { text-decoration: none; color: #1b262c;}
+::selection { background:#fada00;}
+.blind { position:absolute; top:-99999px; left: 0;}
+.skip_nav a { position: absolute; left: 0; top: -9990px; color: #222222; z-index: 1000; background: yellow;}
+.skip_nav a:focus { top:0;  z-index: 1000;}
+
+
+
+/*layout*/
+.header {  position: fixed; width: 100%; height: 74px; background-color: white; z-index: 100;}
+.header .h_inner {position: relative; margin: 0 auto; width: 94%;  }
+
+#main { width: 100%; }
+#main .inner :after { content: ""; display: block; clear: both;}
+#main .inner { margin: 0 auto; width: 94%; /*border: 1px dashed white; box-sizing: border-box;*/ min-width: 1600px; } /* 여기 테두리 두르지 않으면 왜 위에 공백이 생기지? */
+
+.side1 { position:fixed; left:0; width: 50px; height: 100%;  background-color: white;  z-index: 50; }
+.side2 { position:fixed; right:0; width:50px; height: 100%;  background: white; z-index: 50;}
+
+#about {  margin-top: 400px; text-align: center; }
+#skills { margin-top: 400px; margin-bottom: 200px; width: 100%; }
+#works .inner_w { position: relative; margin-top:500px; height: 2000px; }
+#contact {position: relative; height: 1000px;}
+#footer { height: 60px; background: white; text-align: center; }
+
+
+
+
+/*header*/
+.header h1 { text-align: center; font-size: 20px; line-height: 74px; font-family: "Noto Sans Mono CJK KR" "Roboto Condensed"; font-weight: 900; letter-spacing: 0.2px; z-index:10;}
+.header h2 {display: inline-block; position: absolute; left: 0;  line-height: 80px; font-size: 15px;}
+.header .h_inner .year { position: absolute; right: 2px;  font-family:"Roboto Condensed" ; letter-spacing: -1px; line-height: 80px; font-size: 15px;} 
+
+
+/*title*/
+h3 { opacity: 0; }
+h3:nth-child(odd) { position: absolute; left: 0px; top: 30px; font-family:"Noto Sans Mono CJK KR" "Noto Sans CJK KR"; font-weight: bold; }
+h3:nth-child(even) { position: absolute; right: 0px; top: 30px; font-family: "Roboto Condensed"; font-weight: 700; font-size:15px; }
+
+   
+/*sidebar*/   
+.side1 .icon1 { position: absolute; top: 374px; left: 13px; }
+.side1 .icon1 img { margin-top: 24px; z-index: 1;}
+.side1 .icon1 .pn { display: none; position:absolute; left:36px; top:24px; width: 150px; height: 32px; background: white; text-align: center; line-height: 32px; box-shadow:2px 3px 10px rgba(0,0,0,.2);}
+.side1 .icon1 .mail {display: none; position:absolute; left:36px; top:69px; width: 200px; height: 32px; background: white; text-align: center; line-height: 32px; box-shadow:2px 3px 10px rgba(0,0,0,.2);}
+
+.side2 .icon2 { margin: 0 auto; padding-top: 326px; text-align: center; }
+.side2 .icon2 img { margin-top: 20px; width: 12px;}
+
+	
+
+/*main*/	
+.home {/* border: 3px solid blue;*/ padding-top: 72px;}
+.inner .pic_main { height: 760px; background: url(../images/main_pic.jpg) no-repeat -200px; background-size: 114%;}	
+.slogan { margin-top: 10px; padding-right: 4px; padding-left: 4px; font-weight: normal; text-transform:uppercase;}
+
+   
+
+/*about*/	
+#about {position: relative; left: 0; top: 0; }
+#about:after {content: ""; display: block; clear: both;}
+#about .align { display: inline-block; margin-top: 125px; width: 96%; }
+#about .align:after {content: ""; display: block; clear: both;}
+#about .hobby {position: relative; left: -500px; top: 0px; float: left; width: 28%;  margin-top: 10px; text-align: right; font-weight: bold;}
+#about .about_pic {float: left; margin:0 auto; width:42%; margin-left:1%; margin-right:1%; height: 675px; background: url(../images/about_bg.jpg) no-repeat -340px 0px; background-size: 180%;}
+#about .adress {position: relative; right:-500px; bottom: 0; float: left; width:26%; margin-top: 544px; margin-bottom: 10px; text-align: left; font-weight: bold;}
+#about ul li {font-size: 14px; line-height: 24px; }
+
+
+
+
+/*skills*/
+#skills:after { content: ""; display: block; clear: both;}
+
+.ss {margin: 0 auto; position: relative; height:1000px;}
+.ss:after { content: ""; display: block; clear: both;} 
+
+.s1 { position: absolute; left: 250px; top: 200px;; width:383px; height: 736px; background: white; }
+.s2 { position: absolute; right: 250px; top: 200px;; width:383px; height: 736px; background: white; }	
+.s1 img:nth-child(1), .s2 img:nth-child(1) {width: 370px;}
+.s1 img:nth-child(2), .s2 img:nth-child(2) { margin-top: 109px; position: absolute; left: 134px; top: 0;}      
+.s1 dl, .s2 dl { margin-top: 330px; }
+.s1 dt, .s2 dt { letter-spacing: -0.5px;}
+.s1 dd, .s2 dd { position: relative; left: 0; top: 0; margin-bottom: 25px; margin-top: 5px; height: 12px; width:370px; background-color: #e2e2e2; }
+.s1>p, .s2>p   { font-family: "Noto Sans Mono CJK KR";} 
+
+
+
+/* 스킬 바 */
+.s1 .d1_move {position: absolute; left: 0; top: 0px; width:0px; height: 12px; background: #fada00; }
+.s1 .d2_move {position: absolute; left: 0; top: 0px; width:0px; height: 12px; background: #fada00; }
+.s2 .d3_move {position: absolute; left: 0px; top:0px; width:0px; height: 12px; background: #fada00; }
+.s2 .d4_move {position: absolute; left: 0px; top:0px; width:0px; height: 12px; background: #fada00; }
+.s2 .d5_move {position: absolute; left: 0px; top:0px; width:0px; height: 12px; background: #fada00; }
+
+
+
+/*works*/
+#works .inner_w:after {content: ""; display: block; clear: both;}
+#works .inner_w .bg_c { position: absolute; left: 200px; top: -28px; width: 1100px;  z-index: 10; }
+#works .inner_w .bg_d { position: absolute; left: 314px; top: 770px; width: 1100px;  z-index: 10; }
+
+#works .inner_w .w1 { position: absolute; left: -1000px; top: 20px; }
+#works .inner_w .w2 { position: absolute; right: -1000px; top: 400px; }
+#works .inner_w .w3 { position: absolute; left: -1000px; top: 820px; }
+#works .inner_w .w4 { position: absolute; right: -1000px; top: 1200px; }
+
+#works .w1 li { float:left;  width: 300px; height:300px; }
+#works .w2 li { float:left;  width: 300px; height:300px; }
+#works .w3 li { float:left;  width: 300px; height:300px; }
+#works .w4 li { float:left;  width: 300px; height:300px; }
+
+
+/* 썸네일 설명 */
+#works .inner_w li .w_pop { overflow:hidden; position:relative; display:block; }
+#works .inner_w li .w_pop .prbl { width: 300px; }
+#works .inner_w li .w_pop .ds { transition:0.5s; position:absolute; left:0px; top:300px; width: 300px; height:300px; background-color:rgba(0,0,0,1); color: white;}
+#works .inner_w li .w_pop:hover .ds { top:200px; }
+#works .inner_w li .w_pop .ds p { margin-left: 20px; margin-top: 20px; font-weight: normal;}
+#works .inner_w li .w_pop .ds p span { margin-top: 10px; font-size: 12px;}
+
+
+
+/*팝업*/
+.pop { display:none; overflow:auto; position:fixed; z-index:2000; left:0px; top:0px; width:100%; height:100%; background:white;  }
+.pop .p { width: 100%;}
+.pop .p img { width: 100%;}
+
+.pop .site_btn {position: fixed; right: 50px; bottom: 50px; display: block; width: 60px; height: 60px; border-radius: 50%; background-color: #ccc; text-align: center; font-size: 12px;}
+.pop .site_btn .oiw { display: inline-block; margin-top: 4px; line-height: -2px; }
+.close { position:fixed; z-index:1100; right:50px; top:50px; }
+
+
+
+
+
+/*contact*/
+#contact .bg {margin: 0 auto; /*border: 5px solid red;*/ width: 100%; height: 100%; background: url(../images/ty_bg.jpg) 0px 180px no-repeat; background-size: 100%;}
+#contact .number {opacity: 0; position: absolute; right: 500px; top: 420px; /*border: 1px dashed;*/ font-family: "Noto Sans Mono CJK KR"; font-size: 16px;}
+#contact .number dt { float: left; margin-top: 6px; /*border: 1px dashed; box-sizing: border-box;*/ }
+#contact .number dd { margin-left: 100px; margin-top: 6px; font-weight: normal; /* box-sizing: border-box; border: 1px dashed red;*/}
+
+
+
+
+/*footer*/
+#footer p { /*border: 2px solid red;*/ color: #252525; font-family: Helvetica; font-weight: normal; line-height: 60px;}
+#footer p span { font-weight: normal;}

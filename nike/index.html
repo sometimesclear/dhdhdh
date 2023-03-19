@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nike</title>
+<style type="text/css">
+/* reset */
+body,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,p,input,fieldset { margin:0; padding:0; }
+ul { list-style:none; }
+img { border:0; vertical-align:top; }
+table { border-collapse: collapse; }
+fieldset { border: 0; }
+
+/* base */
+body { font-family: "나눔고딕"; font-size:12px; font-weight: bold; color: #767676;}
+a { text-decoration:none; color:#767676; }
+a:hover { color: orange; }
+.blind { position: absolute; top:-9999px; left: 0px;}
+.skip_navigation a { position: absolute; top:-9999px; left: 0px; }
+.skip_navigation a:focus { position: absolute; top:0px; left: 0px;  background: red; color: white; }
+
+
+
+/* layout */
+#header { height:92px; /*background:yellow;*/ }
+#header .inner { position:relative; margin:0 auto; width:90%; min-width: 960px; height:92px; /*border:1px dashed #333;*/ }
+
+#visual { /*height:700px;*/ /*border: 2px dashed green;*/ min-width: 960px; }
+
+#contents { margin: 0 auto; width: 90%; min-width: 960px; /*height:370px;*/ margin-top:20px; margin-bottom:70px; /*border:2px dashed skyblue;*/ }
+
+#footer { height:145px; background:black; }
+#footer .inner { position: relative; margin:0 auto; width: 90%; min-width: 960px; height:143px; }
+
+
+/* header */
+h1 { position:absolute; left:0px; top:28px; width:125px; height:45px; }
+.gnb { position:absolute; left:300px; top:52px; /*width:275px;*/ height:15px; /* background:orange; */ }
+.gnb li {float: left; margin-right: 33px;}
+/*li가 블록요소로 세로배열되어있기 때문에 a가 아닌 li를 가로배열시킨다.*/
+.gnb li a { transition:0.6s; color: #484848; font-size: 14px; font-weight: bold; }
+.gnb li a:hover { padding-left:5px; padding-right: 5px; color:#fff; background-color:#484848;}
+
+
+.top_gnb { position: absolute; top: 24px; right: 0; /*width: 153px;*/ height: 9px; /*background: lightgreen;*/ }
+.top_gnb li { float: left; margin-left: 21px; }
+.top_gnb li a { font-size: 10px; font-weight: bold; transition: 0.4s; }
+.top_gnb li a:hover { background: orange; color: white; padding-left: 3px; padding-right: 3px; letter-spacing: 3px;}
+
+.search { position: absolute; right: 0px; bottom: 19px; /*width:192px; height: 25px;*/ padding: 5px;  border: 1px solid #e5e5e5;}
+.search #t1 { transition: 0.5s; border: 0px; width: 162px; height: 15px; /*background-color: yellow;*/ outline: none;}
+.search #t1:focus { width: 200px; }
+.search input { float: left; }
+		/* input 등 폼 요소간의 배열이 어긋나고 이를 해결하기 위해 float 설정 */
+
+
+
+/* visual */
+#visual img { width: 100%; }
+
+
+
+/* contents */
+#contents:after {content: ""; display: block; clear: both;}
+#contents h3 { padding-top: 28px; padding-bottom: 13px; font-size: 18px; color: #555; }
+
+#contents img { width: 100%; }
+.con1 { float: left; width: 32.66%; margin-right: 1%;  }
+.con2 { float: left; width: 32.66%; margin-right: 1%;  }
+.con3 { float: left; width: 32.66%;  }
+
+
+
+/* footer */
+#footer p { font-size:11px; font-weight: bold; }
+.address { color: #888; padding-top: 49px; padding-bottom: 11px; /*border: 1px solid yellow;*/ }
+.copyright { color: #ddd; }
+.sns { position: absolute; top:51px; right: 0px; /*width: 137px;*/ height: 24px; }
+.sns li { float: left; margin-left: 13px; }
+.sns li a { transition: 0.5s; opacity: 0.33; }
+.sns li a:focus {opacity: 1;}
+.sns li a:hover {opacity: 1;}
+
+
+</style>
+</head>
+
+
+<body>
+<div class="skip_navigation">
+	<a href="#contents">본문바로가기</a>
+</div>
+
+
+
+
+  <div id="header">
+	   <div class="inner">
+
+			  <h1><a href="#"><img src="images/logo.gif" alt="Nike" /></a></h1>
+			  
+			  <h2 class="blind">주요메뉴</h2>
+			  <ul class="gnb">
+				<li><a href="#">MEN</a></li>
+				<li><a href="#">WOMEN</a></li>
+				<li><a href="#">BOYS</a></li>
+				<li><a href="#">GILRS</a></li>
+			  </ul>
+			  
+			 <ul class="top_gnb">
+			 	<li><a href="#">JOIN</a></li>
+				<li><a href="#">LOGIN</a></li>
+				<li><a href="#">COSTOMER</a></li>
+			 </ul>
+			
+			 <div class="search">
+			 	<form action="#">
+			 		<fieldset>
+						<legend class="blind">통합검색</legend>
+						
+						<label id="t1" class="blind">검색어 입력:</label><input type="text" id="t1" />
+						<input type="image" src="images/search_btn.gif" alt="검색하기" />
+					</fieldset>
+				</form>	
+			 </div>	
+			
+	   </div>
+  </div>
+
+
+
+
+
+  <div id="visual">
+  	<img src="images/visual_typo.jpg" alt="STRIKE A BALANCE - Nike Free TR Focus Flyknit hugs your foot for natural flexibility during your workout.">
+  </div>
+
+
+
+
+
+  <div id="contents">
+  	<h2 class="blind">여름 신상품</h2>
+	  
+	  <div class="con1">		 
+	  	<a href="#"><img src="images/con_img1.jpg" alt="여름 숏팬츠" /></a>
+	  	<h3><a href="#">여름 숏팬츠</a></h3>
+	  	<p><a href="#">뛰어난 활동성과 편안한 착용감</a></p>
+	  </div>
+	  
+	  <div class="con2">
+	  	<a href="#"><img src="images/con_img2.jpg" alt="나이키 에어 줌 페가수스" /></a>
+	  	<h3><a href="#">나이키 에어 줌 페가수스</a></h3>
+	  	<p><a href="#">앞, 뒤 두 개의 줌 에어가 선사하는 놀라운 반응성</a></p>
+	  </div>
+	  
+	  <div class="con3">
+	  	<a href="#"><img src="images/con_img3.jpg" alt="나이키 프로" /></a>
+	    <h3><a href="#">나이키 프로</a></h3>
+	  	<p><a href="#">트레이닝을 위한 최상의 베이스 레이어</a></p>
+	  </div>
+  </div>
+
+
+
+
+
+  <div id="footer">
+	   <div class="inner">
+		
+			<h2 class="blind">저작권자 및 기타 정보</h2>		
+			<p class="address">나이키코리아 대표 : 데이빗욱환송 서울시 강남구 테헤란로 152 (역삼동, 강남파이낸스센터 31층)</p>
+			<p class="copyright">&copy; 2019 Nike, Inc. All Rights Reserved</p>
+			
+			<ul class="sns">
+				<li><a href="#"><img src="images/icon1.gif" alt="트위터"></a></li>
+				<li><a href="#"><img src="images/icon2.gif" alt="페이스북"></a></li>
+				<li><a href="#"><img src="images/icon3.gif" alt="유튜브"></a></li>
+				<li><a href="#"><img src="images/icon4.gif" alt="인스타그램"></a></li>
+			</ul>
+	   </div>
+  </div>
+
+
+
+
+
+</body>
+</html>

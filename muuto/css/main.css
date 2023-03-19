@@ -1,0 +1,15 @@
+@import url(common.css);
+
+body {background: url(../images/main_bg.jpg) no-repeat center top; color: white; font-size:12px; font-family: 'Dinbol'; }
+/* 비주얼 */
+#visual ul li.f1 {float: left;}
+#visual .search { position: absolute; left: 0px; bottom:0px; opacity: .6;}
+#visual .m2 { position: absolute; left: 480px; top:0px;}
+#visual .m3 { position: absolute; left: 320px; top:160px;}
+#visual .f2 {float: right;}
+#visual .menu { opacity: .6; }
+
+/* 검색 */
+#visual .search {position: absolute; left: 160px; bottom: 0px; width: 480px; height: 160px; text-align: center;  }
+#visual input[type=image] { opacity: .6;}
+#visual input[type=text] {padding-top: 60px; border: 0; border-bottom: 2px black solid; width: 380px; height: 40px; background: none; font-size: 20px;}

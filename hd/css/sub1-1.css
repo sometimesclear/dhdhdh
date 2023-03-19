@@ -1,0 +1,8 @@
+@import url(common.css);
+
+
+#contents_sub .philosophy .p_manage { margin-right: 41px; margin-bottom: 41px; float: left; width: 239px; height: 239px; border: 1px dashed darkred; background: url(../images/img_manage.jpg)}
+#contents_sub .philosophy h4 { margin-bottom: 14px; margin-top: 28px; font: 14px/24px "돋움"; font-weight: bold; /*border: dashed 2px orange;*/}
+#contents_sub .philosophy .h_first { margin-top: 0; }
+#contents_sub .philosophy p { font: 12px/24px "돋움"; /* border: 1px solid green;*/}
+#contents_sub .philosophy .p_last { margin-top:23px; margin-bottom: 36px; }
