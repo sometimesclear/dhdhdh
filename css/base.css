@@ -1,0 +1,88 @@
+/* reset */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body,
+div,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+input,
+button {
+  font-size: 12px;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+img,
+fieldset,
+iframe {
+  border: 0;
+}
+img {
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+}
+
+/*base*/
+body {
+  font-family: 'Pretendard', 'Roboto', sans-serif, 'Roboto Condensed',
+    'Noto Sans CJK KR', Helvetica;
+  font-size: 16px;
+  color: #1b262c;
+  overflow-x: hidden;
+  min-width: 375px;
+}
+a {
+  text-decoration: none;
+  color: #1b262c;
+}
+::selection {
+  background: #fada00;
+}
+.blind {
+  position: absolute;
+  top: -99999px;
+  left: 0;
+}
+.skip_nav a {
+  position: absolute;
+  left: 0;
+  top: -9990px;
+  color: #222222;
+  z-index: 1000;
+  background: yellow;
+}
+.skip_nav a:focus {
+  top: 0;
+  z-index: 1000;
+}

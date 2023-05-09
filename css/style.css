@@ -1,0 +1,105 @@
+h1 {
+  color: red;
+}
+
+p {
+  color: red;
+}
+
+.bg {
+  background-color: red;
+}
+
+/*layout*/
+body {
+  width: 100vw;
+  background-color: #b8b8b8;
+  font-family: "NeoDunggeunmoPro-Regular";
+  min-height: 100vh;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  font-size: 26px;
+  font-family: "NeoDunggeunmo";
+}
+
+header {
+  background-color: #02009b;
+  color: #ebefff;
+  border-left: 6px solid #c4c4bb;
+  border-top: 6px solid #b1b8b8;
+  border-bottom: 6px solid #969696;
+  border-right: 6px solid #5b5657;
+  box-sizing: border-box;
+}
+
+footer {
+  color: #232323;
+  border-right: 6px solid #5b5657;
+}
+
+.content {
+  min-width: auto;
+  height: calc(100vh - 140px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 6px solid #5b5657;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.menu li a {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 2em;
+  font-family: "NeoDunggeunmo";
+}
+.menu li a span {
+  font-size: 0.8em;
+}
+.menu li img {
+  width: 100px;
+}
+
+.content-wrap {
+  min-width: auto;
+  border-right: 6px solid #5b5657;
+}
+.content-wrap section {
+  padding: 40px;
+  font-family: "ChosunGu";
+  font-size: 2em;
+  line-height: 1.8em;
+  margin-bottom: 30px;
+}
+.content-wrap section h3 {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.contact {
+  height: calc(100vh - 140px);
+}
+.contact dl {
+  margin-bottom: 32px;
+}
+.contact dl dt {
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */

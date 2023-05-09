@@ -1,0 +1,54 @@
+h1 {
+  color: red;
+}
+
+p {
+  color: red;
+}
+
+.bg {
+  background-color: red;
+}
+
+/*layout*/
+body {
+  width: 100vw;
+  background-color: #8b8b8c;
+  padding: 10%;
+}
+
+header {
+  display: flex;
+  min-width: auto;
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8vh;
+  margin-left: 6vw;
+}
+.menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu li a {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 2em;
+  font-family: "NeoDunggeunmoPro-Regular";
+}
+.menu li img {
+  width: 100px;
+}
+.menu li span {
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=style.css.map */
